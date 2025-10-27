@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ray’s Food Mart | Exotic Candy • Vape • Lotto</title>
+  <link rel="icon" href="https://tse4.mm.bing.net/th/id/OIP.T6ixWbO-mMRQ6pDAwwHcRwHaCY?rs=1&pid=ImgDetMain&o=7&rm=3" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      color:#222;
+      background-color:#fff;
+      overflow-x:hidden;
+    }
+
+    header {
+      background:linear-gradient(90deg, #ff0000, #0033aa);
+      color:#fff;
+      padding:15px 0;
+      box-shadow:0 2px 8px rgba(0,0,0,0.15);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .container {
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header img {
+      height:60px;
+      border-radius:6px;
+    }
+
+    nav a {
+      color:#fff;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    nav a:hover {
+      color:#ffe600;
+      text-decoration:underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581091215367-59ab6d3c8885?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      height:75vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      color:white;
+      text-align:center;
+      position:relative;
+    }
+
+    .hero::after {
+      content:"";
+      position:absolute;
+      top:0; left:0; right:0; bottom:0;
+      background:rgba(0,0,0,0.45);
+    }
+
+    .hero-content {
+      position:relative;
+      z-index:2;
+    }
+
+    .hero h1 {
+      font-size:3rem;
+      text-shadow:2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size:1.2rem;
+      margin:20px 0;
+      max-width:700px;
+      margin:auto;
+    }
+
+    .btn {
+      background:#ff0000;
+      color:#fff;
+      padding:12px 30px;
+      border:none;
+      border-radius:25px;
+      font-size:1rem;
+      cursor:pointer;
+      transition:0.3s;
+      text-decoration:none;
+    }
+
+    .btn:hover {
+      background:#0033aa;
+      color:#fff;
+    }
+
+    section.features {
+      padding:60px 0;
+      background:#f9f9f9;
+    }
+
+    .features h2 {
+      text-align:center;
+      color:#0033aa;
+      font-size:2rem;
+      margin-bottom:40px;
+    }
+
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+      gap:30px;
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .card {
+      background:white;
+      border-radius:15px;
+      padding:25px;
+      text-align:center;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform:translateY(-8px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color:#ff0000;
+      margin:10px 0;
+      font-size:1.3rem;
+    }
+
+    .card p {
+      font-size:0.95rem;
+      color:#555;
+      margin-bottom:20px;
+    }
+
+    .card a {
+      background:#0033aa;
+      color:white;
+      padding:10px 18px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .card a:hover {
+      background:#ff0000;
+    }
+
+    footer {
+      background:#111;
+      color:#ccc;
+      text-align:center;
+      padding:20px 0;
+      margin-top:60px;
+    }
+
+    footer a { color:#ff0000; text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+
+    @media (max-width:600px) {
+      .hero h1 {font-size:2rem;}
+      nav a {margin:0 8px;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.T6ixWbO-mMRQ6pDAwwHcRwHaCY?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ray’s Logo">
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="candy.html">Candy</a>
+        <a href="vape.html">Vape</a>
+        <a href="lotto.html">Lotto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Ray’s Food Mart</h1>
+      <p>Exotic candy, premium vape products, and OLG lotto services — all in one spot!</p>
+      <a href="candy.html" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>What We Offer</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606312619070-2d2045ef4b5c?auto=format&fit=crop&w=600&q=60" alt="Candy" style="width:100%;border-radius:12px;">
+        <h3>🍭 Exotic Candy</h3>
+        <p>Discover sweets and snacks from Japan, the UK, and across the world — rare, colorful, and delicious.</p>
+        <a href="candy.html">See Candy</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1613918089253-1a5df0327aa3?auto=format&fit=crop&w=600&q=60" alt="Vape" style="width:100%;border-radius:12px;">
+        <h3>💨 Vape Products</h3>
+        <p>Find the newest disposable vapes, liquids, and accessories at unbeatable prices.</p>
+        <a href="vape.html">Shop Vape</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1630508312372-465e5f5f9057?auto=format&fit=crop&w=600&q=60" alt="Lotto" style="width:100%;border-radius:12px;">
+        <h3>🎟️ Lotto</h3>
+        <p>Get your OLG lottery and scratch tickets — play, check, and claim prizes here!</p>
+        <a href="lotto.html">Play Lotto</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ray’s Food Mart | <a href="index.html">Home</a></p>
+  </footer>
+
+</body>
+</html>
